@@ -4,7 +4,7 @@ function HeaderSite() {
     return (
         <header className={style.header}>
             <img src={igniteSymbol} alt="logo Iginite" />
-            <strong>Ignite Feed</strong>
+            
         </header>
     );
 }

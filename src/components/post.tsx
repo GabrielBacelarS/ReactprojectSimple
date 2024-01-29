@@ -1,4 +1,5 @@
 import 'react';
+import { Comment } from './comment';
 import style from '../css/post.module.css';
 
 export default function Post() {
@@ -29,6 +30,10 @@ export default function Post() {
                 <p>
                     <a href="https://www.figma.com/file/YCmtiZw9BMVuEweAMciyMq/Ignite-Feed-(Community)?node-id=31%3A105&mode=dev">
                         Figma do projeto
+                    </a>{' '}
+                    <br />
+                    <a href="https://github.com/GabrielBacelarS/ReactprojectSimple">
+                        Hub do projeto
                     </a>
                 </p>
                 <p>
@@ -36,6 +41,18 @@ export default function Post() {
                     <a href="#rocketseat">#rocketseat</a>
                 </p>
             </div>
+            <form className={style.commentForm}>
+                <strong> Deixe seu feedback </strong>
+                <textarea>Deixe um comentario</textarea>
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
+            <div className={style.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
         </article>
     );
-    }
+}
